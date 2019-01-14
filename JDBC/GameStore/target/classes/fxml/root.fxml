@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="722.0" prefWidth="1122.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bin.controllers.RootController">
+  <tabs>
+    <Tab text="logs">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="logTable" layoutX="14.0" layoutY="14.0" prefHeight="627.0" prefWidth="1091.0">
+                    <columns>
+                      <TableColumn fx:id="userColumn" prefWidth="191.0" text="User" />
+                      <TableColumn fx:id="actionColumn" prefWidth="712.0" text="Action" />
+                        <TableColumn fx:id="dateColumn" prefWidth="187.0" text="Date" />
+                    </columns>
+                  </TableView>
+                  <Button layoutX="529.0" layoutY="649.0" mnemonicParsing="false" onAction="#reloadButtonPressed" text="Reload" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Backups">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="594.0" layoutY="148.0" mnemonicParsing="false" onAction="#backopButtonPressed" prefHeight="27.0" prefWidth="123.0" text="backup" />
+                  <TextField fx:id="backupNameTextField" layoutX="408.0" layoutY="149.0" />
+                  <Button layoutX="594.0" layoutY="281.0" mnemonicParsing="false" onAction="#restoreButtonPressed" prefHeight="27.0" prefWidth="123.0" text="restore" />
+                  <TextField fx:id="restoreNameTextField" layoutX="408.0" layoutY="282.0" />
+                  <Label fx:id="backupLabel" layoutX="543.0" layoutY="392.0" text="Label" />
+               </children></AnchorPane>
+        </content>
+      </Tab>
+    <Tab text="Delete User">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="userTable" layoutX="14.0" layoutY="68.0" prefHeight="550.0" prefWidth="332.0">
+                    <columns>
+                      <TableColumn fx:id="idColumn" prefWidth="79.0" text="id" />
+                      <TableColumn fx:id="loginColumn" prefWidth="252.0" text="login" />
+                    </columns>
+                  </TableView>
+                  <TextField fx:id="searchTextField" layoutX="14.0" layoutY="31.0" prefHeight="26.0" prefWidth="230.0" />
+                  <Button layoutX="266.0" layoutY="31.0" mnemonicParsing="false" onAction="#searchButtonPressed" prefHeight="26.0" prefWidth="80.0" text="search" />
+                  <Button layoutX="652.0" layoutY="246.0" mnemonicParsing="false" onAction="#deleteButtonPressed" prefHeight="44.0" prefWidth="135.0" text="Delete" />
+                  <Label fx:id="deleteLabel" layoutX="702.0" layoutY="337.0" text="Label" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Add admin/root">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="154.0" layoutY="99.0" text="Login" />
+                  <Label layoutX="154.0" layoutY="143.0" text="Name" />
+                  <Label layoutX="154.0" layoutY="190.0" text="Email" />
+                  <Label layoutX="156.0" layoutY="239.0" text="Country" />
+                  <Label layoutX="156.0" layoutY="287.0" text="Access" />
+                  <TextField fx:id="loginTextField" layoutX="234.0" layoutY="94.0" />
+                  <TextField fx:id="nameTextField" layoutX="234.0" layoutY="138.0" />
+                  <TextField fx:id="emailTextField" layoutX="234.0" layoutY="185.0" />
+                  <ChoiceBox fx:id="countryCB" layoutX="245.0" layoutY="234.0" prefWidth="150.0" />
+                  <ChoiceBox fx:id="accessCB" layoutX="245.0" layoutY="282.0" prefWidth="150.0" />
+                  <Button layoutX="653.0" layoutY="182.0" mnemonicParsing="false" onAction="#addUserButtonPressed" prefHeight="50.0" prefWidth="93.0" text="Add" />
+                  <Label fx:id="addUserLabel" layoutX="543.0" layoutY="337.0" text="Label" />
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="Delete game">
+        <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <children>
+                    <TableView fx:id="gameTable" layoutX="14.0" layoutY="68.0" prefHeight="550.0" prefWidth="332.0">
+                        <columns>
+                            <TableColumn fx:id="idGameColumn" prefWidth="79.0" text="id" />
+                            <TableColumn fx:id="nameGameColumn" prefWidth="252.0" text="name" />
+                        </columns>
+                    </TableView>
+                    <TextField fx:id="searchGameTextField" layoutX="14.0" layoutY="31.0" prefHeight="26.0" prefWidth="230.0" />
+                    <Button layoutX="266.0" layoutY="31.0" mnemonicParsing="false" onAction="#searchGameButtonPressed" prefHeight="26.0" prefWidth="80.0" text="search" />
+                    <Button layoutX="652.0" layoutY="246.0" mnemonicParsing="false" onAction="#deleteGameButtonPressed" prefHeight="44.0" prefWidth="135.0" text="Delete" />
+                    <Label fx:id="deleteGameLabel" layoutX="702.0" layoutY="337.0" text="Label" />
+                </children></AnchorPane>        </content>
+      </Tab>
+      <Tab text="Delete Dev">
+        <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <children>
+                    <TableView fx:id="devTable" layoutX="14.0" layoutY="68.0" prefHeight="550.0" prefWidth="332.0">
+                        <columns>
+                            <TableColumn fx:id="idDevColumn" prefWidth="79.0" text="id" />
+                            <TableColumn fx:id="nameDevColumn" prefWidth="252.0" text="name" />
+                        </columns>
+                    </TableView>
+                    <TextField fx:id="searchDevTextField" layoutX="14.0" layoutY="31.0" prefHeight="26.0" prefWidth="230.0" />
+                    <Button layoutX="266.0" layoutY="31.0" mnemonicParsing="false" onAction="#searchDevButtonPressed" prefHeight="26.0" prefWidth="80.0" text="search" />
+                    <Button layoutX="652.0" layoutY="246.0" mnemonicParsing="false" onAction="#deleteDevButtonPressed" prefHeight="44.0" prefWidth="135.0" text="Delete" />
+                    <Label fx:id="deleteDevLabel" layoutX="702.0" layoutY="337.0" text="Label" />
+                </children></AnchorPane>        </content>
+      </Tab>
+  </tabs>
+</TabPane>

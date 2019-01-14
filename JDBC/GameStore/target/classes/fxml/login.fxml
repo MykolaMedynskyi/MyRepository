@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bin.controllers.LoginController">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="194.0" prefWidth="362.0">
+            <children>
+                <Button layoutX="10.0" layoutY="151.0" mnemonicParsing="false" onAction="#exitButtonPressed" prefHeight="30.0" prefWidth="80.0" text="EXIT">
+                    <font>
+                        <Font size="11.0" />
+                    </font>
+                </Button>
+                <Button layoutX="270.0" layoutY="153.0" mnemonicParsing="false" onAction="#registrationButtonPressed" prefHeight="30.0" prefWidth="80.0" text="registration">
+                    <font>
+                        <Font size="11.0" />
+                    </font>
+                </Button>
+                <TextField fx:id="loginTextField" layoutX="10.0" layoutY="33.0" prefHeight="30.0" prefWidth="250.0" />
+                <Label layoutX="117.0" layoutY="12.0" text="Login" />
+                <Label layoutX="105.0" layoutY="81.0" text="Password" />
+                <Button layoutX="279.0" layoutY="103.0" mnemonicParsing="false" onAction="#loginButtonPressed" prefHeight="26.0" prefWidth="62.0" text="Login" />
+            <PasswordField fx:id="passwordField" layoutX="10.0" layoutY="101.0" prefHeight="30.0" prefWidth="250.0" />
+            <Label fx:id="infoLabel" alignment="CENTER" layoutX="92.0" layoutY="160.0" prefHeight="16.0" prefWidth="173.0" text="Label" />
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>

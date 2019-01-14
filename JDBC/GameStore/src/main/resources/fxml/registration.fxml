@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="426.0" prefWidth="365.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bin.controllers.RegistrationController">
+    <children>
+        <Label layoutX="143.0" layoutY="13.0" prefHeight="16.0" prefWidth="80.0" text="Registration" />
+        <Label layoutX="20.0" layoutY="55.0" text="Nickname" />
+        <Label layoutX="20.0" layoutY="95.0" text="Real name" />
+        <Label layoutX="20.0" layoutY="135.0" text="Email" />
+        <Label layoutX="20.0" layoutY="175.0" text="Gender" />
+        <Label layoutX="20.0" layoutY="215.0" text="Birthday" />
+        <Label layoutX="20.0" layoutY="255.0" text="Phone" />
+        <Label layoutX="20.0" layoutY="295.0" text="Country" />
+        <Label layoutX="20.0" layoutY="335.0" text="Password" />
+        <TextField fx:id="loginTextField" layoutX="97.0" layoutY="50.0" prefHeight="26.0" prefWidth="237.0" />
+        <TextField fx:id="nameTextField" layoutX="97.0" layoutY="90.0" prefHeight="26.0" prefWidth="237.0" />
+        <TextField fx:id="emailTextField" layoutX="97.0" layoutY="130.0" prefHeight="26.0" prefWidth="237.0" />
+        <TextField fx:id="phoneTextField" layoutX="97.0" layoutY="250.0" prefHeight="26.0" prefWidth="237.0" />
+        <DatePicker fx:id="bdDatePicker" layoutX="97.0" layoutY="210.0" prefHeight="26.0" prefWidth="237.0" />
+        <PasswordField fx:id="passwordField" layoutX="97.0" layoutY="330.0" prefHeight="26.0" prefWidth="237.0" />
+        <RadioButton fx:id="mRB" layoutX="130.0" layoutY="174.0" mnemonicParsing="false" text="Male">
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup></RadioButton>
+        <RadioButton fx:id="fRB" layoutX="229.0" layoutY="174.0" mnemonicParsing="false" text="Female" toggleGroup="$gender" />
+        <Button layoutX="260.0" layoutY="376.0" mnemonicParsing="false" onAction="#registerButtonPressed" text="Register" />
+        <Button layoutX="26.0" layoutY="376.0" mnemonicParsing="false" onAction="#backButtonPressed" text="Back" />
+      <ChoiceBox fx:id="countryChoiceBox" layoutX="97.0" layoutY="290.0" prefHeight="26.0" prefWidth="237.0" />
+      <Label fx:id="infoLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="78.0" layoutY="381.0" prefHeight="16.0" prefWidth="171.0" text="info" />
+    </children>
+</AnchorPane>

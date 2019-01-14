@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="722.0" prefWidth="1122.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bin.controllers.ClientController">
+  <tabs>
+    <Tab text="library">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ListView fx:id="myGameList" layoutY="29.0" onMouseClicked="#libraryGameSelected" prefHeight="660.0" prefWidth="355.0" />
+                  <TextField fx:id="searchTextField" prefHeight="30.0" prefWidth="264.0" />
+                  <Button layoutX="264.0" mnemonicParsing="false" onAction="#librarySearchButtonPressed" prefHeight="29.0" prefWidth="91.0" text="search" />
+                  <Label fx:id="libraryGameLabel" alignment="CENTER" layoutX="507.0" layoutY="228.0" prefHeight="35.0" prefWidth="448.0" text="Label">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="playButton" layoutX="629.0" layoutY="281.0" mnemonicParsing="false" onAction="#playButtonPressed" prefHeight="63.0" prefWidth="209.0" text="PLAY">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="ratingLabel" layoutX="701.0" layoutY="139.0" text="Label" />
+                  <Button fx:id="rateButton" layoutX="759.0" layoutY="161.0" mnemonicParsing="false" onAction="#rateButtonPressed" text="Rate" />
+                  <TextField fx:id="rateTextField" layoutX="665.0" layoutY="162.0" prefHeight="26.0" prefWidth="52.0" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="store">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="storeSearchTextField" prefHeight="30.0" prefWidth="264.0" />
+                  <Button layoutX="264.0" mnemonicParsing="false" onAction="#storeSearchButtonPressed" prefHeight="29.0" prefWidth="91.0" text="search" />
+                  <CheckBox fx:id="indieCB" layoutX="450.0" layoutY="7.0" mnemonicParsing="false" text="Indie" />
+                  <CheckBox fx:id="multiplayerCB" layoutX="450.0" layoutY="30.0" mnemonicParsing="false" text="Myltiplayer" />
+                  <CheckBox fx:id="shooterCB" layoutX="450.0" layoutY="53.0" mnemonicParsing="false" text="Shooter" />
+                  <CheckBox fx:id="competitiveCB" layoutX="560.0" layoutY="53.0" mnemonicParsing="false" text="Competitive" />
+                  <CheckBox fx:id="strategyCB" layoutX="560.0" layoutY="30.0" mnemonicParsing="false" text="Strategy" />
+                  <CheckBox fx:id="casualCB" layoutX="560.0" layoutY="8.0" mnemonicParsing="false" text="Casual" />
+                  <CheckBox fx:id="rpgCB" layoutX="670.0" layoutY="7.0" mnemonicParsing="false" text="RPG" />
+                  <CheckBox fx:id="openWorldCB" layoutX="670.0" layoutY="53.0" mnemonicParsing="false" text="Open World" />
+                  <CheckBox fx:id="tacticalCB" layoutX="670.0" layoutY="30.0" mnemonicParsing="false" text="Tactical" />
+                  <ChoiceBox fx:id="ratingChoiceBox" layoutX="976.0" layoutY="13.0" prefHeight="26.0" prefWidth="52.0" />
+                  <Label layoutX="887.0" layoutY="19.0" text="rating from" />
+                  <Label layoutX="887.0" layoutY="53.0" text="price less" />
+                  <ChoiceBox fx:id="priceCB" layoutX="976.0" layoutY="48.0" prefHeight="26.0" prefWidth="52.0" />
+                  <TableView fx:id="tableView" layoutY="88.0" onMouseClicked="#storeGameSelected" prefHeight="601.0" prefWidth="698.0">
+                    <columns>
+                      <TableColumn fx:id="nameColumn" prefWidth="186.0" text="name" />
+                      <TableColumn fx:id="devColumn" prefWidth="273.0" text="developer" />
+                        <TableColumn fx:id="ratingColumn" minWidth="0.0" prefWidth="127.0" text="rating" />
+                        <TableColumn fx:id="priceColumn" prefWidth="111.0" text="price" />
+                    </columns>
+                  </TableView>
+                  <Label fx:id="gameLabel" alignment="CENTER" layoutX="748.0" layoutY="148.0" prefHeight="26.0" prefWidth="331.0" text="Game">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="textArea" layoutX="708.0" layoutY="189.0" prefHeight="438.0" prefWidth="404.0" />
+                  <Button layoutX="1016.0" layoutY="645.0" mnemonicParsing="false" onAction="#buyButtonPressed" prefHeight="26.0" prefWidth="73.0" text="Buy" />
+                  <Label fx:id="buyInfoLabel" alignment="CENTER" layoutX="743.0" layoutY="650.0" prefHeight="16.0" prefWidth="254.0" text="Label" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab fx:id="tabName" text="name()()()()">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="nameLabel" layoutX="173.0" layoutY="40.0" text="name()()()">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Label>
+                  <Label layoutX="80.0" layoutY="130.0" text="Real Name" />
+                  <TextField fx:id="nameTextField" layoutX="188.0" layoutY="126.0" />
+                  <Label layoutX="80.0" layoutY="168.0" text="Country" />
+                  <ChoiceBox fx:id="countryChoiceBox" layoutX="188.0" layoutY="165.0" prefHeight="26.0" prefWidth="170.0" />
+                  <Label layoutX="80.0" layoutY="206.0" text="Email" />
+                  <TextField fx:id="emailTextField" layoutX="188.0" layoutY="203.0" />
+                  <Button layoutX="194.0" layoutY="259.0" mnemonicParsing="false" onAction="#changeButtonPressed" text="Change" />
+                  <Label layoutX="698.0" layoutY="100.0" text="Balance" />
+                  <Label fx:id="balanceLabel" layoutX="869.0" layoutY="98.0" text="bal" />
+                  <Label layoutX="698.0" layoutY="160.0" text="Card" />
+                  <TextField fx:id="cardTextField" layoutX="796.0" layoutY="155.0" />
+                  <Label layoutX="698.0" layoutY="221.0" text="Add funds" />
+                  <ChoiceBox fx:id="foundsChoiceBox" layoutX="796.0" layoutY="216.0" prefHeight="26.0" prefWidth="92.0" />
+                  <Button layoutX="905.0" layoutY="216.0" mnemonicParsing="false" onAction="#addButtonPressed" prefHeight="26.0" prefWidth="61.0" text="Add" />
+                  <Label fx:id="infoLabel" layoutX="513.0" layoutY="264.0" text="Label" />
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>
