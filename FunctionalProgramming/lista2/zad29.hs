@@ -1,0 +1,1 @@
+zera x = sum [x `div` 5^a | a<-[1.. truncate ((logBase 10 (fromIntegral x) +1)*1.5)]]
