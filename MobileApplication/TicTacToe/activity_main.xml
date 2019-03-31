@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        tools:context=".MainActivity">
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:gravity="center">
+        <TextView
+                android:layout_width="wrap_content" android:gravity="center"
+                android:layout_height="wrap_content" android:id="@+id/resultView"/>
+    </TableRow>
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:gravity="center|top">
+        <TextView
+                android:text="X" android:textSize="50dp" android:gravity="center"
+                android:id="@+id/textView" android:layout_width="70dp" android:layout_height="70dp"/>
+    </TableRow>
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+        <Button
+
+                android:layout_width="70dp"
+                android:transitionName="00"
+                android:layout_height="70dp" android:id="@+id/button00"/>
+        <Button
+
+                android:layout_width="70dp"
+                android:transitionName="01"
+                android:layout_height="70dp" android:id="@+id/button01"/>
+        <Button
+
+                android:layout_width="70dp"
+                android:transitionName="02"
+                android:layout_height="70dp" android:id="@+id/button02"/>
+        <Button
+
+                android:layout_width="70dp"
+                android:transitionName="03"
+                android:layout_height="70dp" android:id="@+id/button03"/>
+        <Button
+
+                android:layout_width="70dp"
+                android:transitionName="04"
+                android:layout_height="70dp" android:id="@+id/button04"/>
+    </TableRow>
+    <TableRow
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="match_parent">
+        <Button
+
+                android:layout_width="70dp"
+                android:transitionName="10"
+                android:layout_height="match_parent" android:id="@+id/button10"/>
+        <Button
+
+                android:layout_width="70dp"
+                android:transitionName="11"
+                android:layout_height="70dp" android:id="@+id/button11"/>
+        <Button
+
+                android:layout_width="70dp"
+                android:transitionName="12"
+                android:layout_height="70dp" android:id="@+id/button12"/>
+        <Button
+
+                android:layout_width="70dp"
+                android:transitionName="13"
+                android:layout_height="70dp" android:id="@+id/button13"/>
+        <Button
+
+                android:layout_width="70dp"
+                android:transitionName="14"
+                android:layout_height="70dp" android:id="@+id/button14"/>
+    </TableRow>
+    <TableRow
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="match_parent">
+        <Button
+
+                android:layout_width="70dp"
+                android:transitionName="20"
+                android:layout_height="70dp" android:id="@+id/button20"/>
+        <Button
+
+                android:layout_width="70dp"
+                android:transitionName="21"
+                android:layout_height="70dp" android:id="@+id/button21"/>
+        <Button
+
+                android:layout_width="70dp"
+                android:transitionName="22"
+                android:layout_height="70dp" android:id="@+id/button22"/>
+        <Button
+
+                android:layout_width="70dp"
+                android:transitionName="23"
+                android:layout_height="70dp" android:id="@+id/button23"/>
+        <Button
+
+                android:layout_width="70dp"
+                android:transitionName="24"
+                android:layout_height="70dp" android:id="@+id/button24"/>
+    </TableRow>
+    <TableRow
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="match_parent">
+        <Button
+
+                android:layout_width="70dp"
+                android:transitionName="30"
+                android:layout_height="70dp" android:id="@+id/button30"/>
+        <Button
+
+                android:layout_width="70dp"
+
+                android:transitionName="31"
+                android:layout_height="70dp" android:id="@+id/button31"/>
+        <Button
+
+                android:layout_width="70dp"
+                android:transitionName="32"
+                android:layout_height="70dp" android:id="@+id/button32"/>
+        <Button
+
+                android:layout_width="70dp"
+                android:transitionName="33"
+                android:layout_height="70dp" android:id="@+id/button33"/>
+        <Button
+
+                android:layout_width="70dp"
+                android:transitionName="34"
+                android:layout_height="70dp" android:id="@+id/button34"/>
+    </TableRow>
+    <TableRow
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="match_parent">
+        <Button
+
+                android:layout_width="70dp"
+                android:transitionName="40"
+                android:layout_height="70dp" android:id="@+id/button40"/>
+        <Button
+
+                android:layout_width="70dp"
+                android:transitionName="41"
+                android:layout_height="70dp" android:id="@+id/button41"/>
+        <Button
+
+                android:layout_width="70dp"
+                android:transitionName="42"
+                android:layout_height="70dp" android:id="@+id/button42"/>
+        <Button
+
+                android:layout_width="70dp"
+                android:transitionName="43"
+                android:layout_height="70dp" android:id="@+id/button43"/>
+        <Button
+
+                android:layout_width="70dp"
+                android:transitionName="44"
+                android:layout_height="70dp" android:id="@+id/button44"/>
+    </TableRow>
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:gravity="center">
+        <Button
+                android:text="Restart"
+                android:id="@+id/buttonRestart" android:layout_width="70dp" android:layout_height="70dp"
+                android:onClick="restart"/>
+    </TableRow>
+</TableLayout>

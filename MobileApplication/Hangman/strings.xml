@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Hangman</string>
+    <string-array name="words">
+        <item>akiso</item>
+        <item>battle</item>
+        <item>brazil</item>
+        <item>computer</item>
+        <item>village</item>
+        <item>university</item>
+        <item>science</item>
+        <item>discovery</item>
+        <item>hitchhiker</item>
+        <item>bridge</item>
+        <item>chain</item>
+        <item>beer</item>
+        <item>loser</item>
+        <item>warrior</item>
+        <item>warlock</item>
+        <item>hunter</item>
+        <item>ketchup</item>
+        <item>chicken</item>
+        <item>dream</item>
+        <item>player</item>
+        <item>cookies</item>
+        <item>space</item>
+        <item>sun</item>
+        <item>game</item>
+        <item>street</item>
+        <item>spaghetti</item>
+        <item>kebab</item>
+        <item>paladin</item>
+        <item>triangle</item>
+    </string-array>
+</resources>
