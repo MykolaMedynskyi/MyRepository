@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             xmlns:tools="http://schemas.android.com/tools">
+
+    <fragment android:layout_width="match_parent" android:layout_height="match_parent"
+              android:id="@+id/main2fragment"
+              android:name="com.example.todo.add_task"
+              tools:layout="@layout/fragment_add_task" android:layout_margin="10dp"
+              tools:layout_editor_absoluteY="5dp"
+              tools:layout_editor_absoluteX="5dp"/>
+
+</android.support.constraint.ConstraintLayout>

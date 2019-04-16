@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+
+    <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp" app:srcCompat="@drawable/game_time_24dp"
+            tools:layout_editor_absoluteY="16dp" tools:layout_editor_absoluteX="16dp" android:id="@+id/imageView"
+            android:layout_marginTop="20dp" android:layout_marginLeft="10dp"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/titleView" android:layout_marginLeft="140dp"
+            android:layout_marginTop="10dp" tools:text="TITLE" android:textStyle="bold|italic"/>
+    <TextView
+            android:text="describe"
+            android:layout_height="wrap_content" android:id="@+id/describeView" android:layout_marginTop="40dp"
+            android:layout_marginLeft="80dp" android:layout_width="wrap_content" android:layout_marginRight="100dp"/>
+    <TextView
+            android:text="14:25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/timeView" android:layout_marginRight="5dp"
+            android:layout_marginLeft="290dp" android:layout_marginTop="10dp" android:textStyle="bold"/>
+    <TextView
+            android:text="09.04.1945"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/dateView" android:layout_marginLeft="255dp"
+            android:layout_marginTop="40dp" android:layout_marginRight="5dp" android:textStyle="bold"/>
+</RelativeLayout>
