@@ -1,0 +1,1 @@
+approx k = foldr (\y x -> x + 1/(foldl (*) 1 [1..y]) ) 0 [1..k]
